@@ -35,10 +35,21 @@ REVISIÓN (fixes aplicados):
   dos líneas. Acortado a solo el número (+34 914 46 85 03) y añadido
   white-space:nowrap como salvaguarda.
 - H1 de portada reescrito, corto y directo (estilo Isra Bravo, incluye
-  la marca porque el sitio trata de un fabricante concreto): "Tu Kobold
-  no funciona. ¿Merece la pena repararlo?" (7 palabras). Tamaño del H1
-  aumentado: clamp(38-58px) → clamp(46-74px) en escritorio, 40px → 48px
-  en móvil.
+  la marca porque el sitio trata de un fabricante concreto). Tamaño
+  del H1 aumentado: clamp(38-58px) → clamp(46-74px) en escritorio,
+  40px → 48px en móvil. Iterado en varios commits posteriores
+  (afirmativo, sin interrogación, sin condicionales, sin "Descubre")
+  hasta el texto final actual: "Tu Kobold no funciona. Aquí lo
+  diagnosticamos y lo reparamos."
+
+REVISIÓN ADICIONAL (esta pasada):
+- Faltaban las etiquetas og:title/og:description/og:url/og:type y el
+  meta robots (no existía ninguna). Añadidas.
+- Actualizado el texto del H1 en este README, que documentaba una
+  versión anterior y ya superada.
+- Verificado: schema.org, sección SEO, banner de cookies, borde del
+  chat, package.json y middleware ya estaban correctos; no se ha
+  tocado nada más.
 
 Variables SMTP en Vercel (ya configuradas, sin cambios):
 SMTP_HOST=cp7124.webempresa.eu
