@@ -58,3 +58,29 @@ SMTP_SECURE=true
 SMTP_USER=soporte@kelatos.com
 SMTP_PASS=[configurada únicamente en Vercel]
 CONTACT_EMAIL=soporte@kelatos.com
+
+REVISIÓN ADICIONAL (checklist unificado de la familia, a petición del cliente):
+- H1 repetía la plantilla "no funciona" usada en varios repos.
+  Reescrito con síntoma específico: "Tu Kobold no aspira o se para
+  solo. Lo diagnosticamos." (10 palabras).
+- BUG REAL — quitada la etiqueta rotada del hero (.hero-pill,
+  "Robots aspiradores · Aspiradores Kobold") que sobresalía y se
+  solapaba con la caja de información en anchos de tablet, mismo
+  patrón detectado hoy en AcerTech y otros repos (aquí con nombre de
+  clase distinto: .hero-pill en vez de .hero-chip/.hero-tag).
+- BUG REAL — dos textos decorativos gigantes sin reducción de tamaño
+  en móvil/tablet: ".problems::after" ("KOBOLD", 180px) y
+  ".care-art::before" ("LIMPIEZA", 88px). Añadida reducción en tablet
+  (100px/56px) y móvil (60px/40px).
+- BUG REAL — el formulario no tenía ninguna casilla de consentimiento
+  de política de privacidad. Añadida, con enlace a
+  https://kelatos.com/privacy-policy/ en azul y subrayado.
+- Añadida franja de aviso de servicio técnico independiente debajo
+  del menú (no existía).
+- Añadido "Sábados, domingos y días festivos estamos cerrados" debajo
+  del horario.
+- Botón "Atención Telefónica..." sin icono, a diferencia del de
+  WhatsApp. Añadido (verificado con cuidado el cierre de </a>).
+- Verificado: schema.org ya usaba correctamente el único teléfono que
+  tiene este repo; formulario correctamente conectado a
+  /api/contacto.
